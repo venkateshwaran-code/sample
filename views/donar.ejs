@@ -1,0 +1,18 @@
+<%- include("./partials/header") %>
+
+<div class="container mt-5">
+    <a href="/logout" class="btn btn-danger">Logout</a>
+    <h2>Welcome DONAR</h2>
+    <form action="/donation" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="Name"><br>
+        <label for="phone">Phone</label>
+        <input type="tel" name="Phone" id="Phone"><br>
+        <label for="name">CITY</label>
+        <input type="text" name="City"><br>
+        <button type="submit">donate</button>
+    </form>
+    
+</div>
+
+<%- include("./partials/footer") %>

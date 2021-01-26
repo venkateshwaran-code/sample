@@ -1,0 +1,56 @@
+h1
+{
+    color: green;
+}
+.c1:hover{
+    box-shadow: 10px 10px 5px grey;
+}
+.logout1{
+    padding-left: 2px;
+}
+body{
+    background-image: url("/background.png");
+}
+form{
+    border: 1px solid black;
+    padding: 25px;
+    width: 35%;
+    border-radius: 20px;
+
+    background-color: whitesmoke;
+}
+.foo-nav
+{
+    background-color: black;
+    color: whitesmoke;
+}
+.login-style-box{
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("/event.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.table
+{
+    background-color: whitesmoke;
+    table-layout: auto;
+    border: 1.5px solid black;
+}
+.Admin-GET
+{
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.Admin-GET:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+<%- include("./partials/header") %>
+<div class="container">
+  <a href="/views/admin.ejs" class="btn btn-primary mb-5">Go Back</a>
+<h3>Donar details</h3>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Phone</th>
+          <th scope="col">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<users.length; i++) {%>
+          <tr class="table">
+            <td> <%= users[i].Name %></td>
+            <td> <%= users[i].Phone %></td>
+            <td> <%= users[i].City %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+</div>
+<%- include("./partials/footer") %>
