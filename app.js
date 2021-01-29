@@ -168,8 +168,8 @@ app.get("/FundDonation",(req,res)=>{
 
 //Event Creation
 app.post("/Event",(req,res)=>{
-  const {Name,Eventdate}=req.body;
-  const event=new Event({Name,Eventdate});
+  const {Name,Eventdate,Eventduration}=req.body;
+  const event=new Event({Name,Eventdate,Eventduration});
   event.save();
   res.send("success");
 })
