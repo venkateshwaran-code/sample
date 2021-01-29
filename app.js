@@ -108,10 +108,10 @@ app
   //register
   app
   .post("/registerusers", async (req, res) => {
-    const { email, password, Access } = req.body;
+    const { name, email, password, Access } = req.body;
 
     // check for missing filds
-    if (!email || !password||!Access) {
+    if (!name|| !email || !password||!Access) {
       res.send("Please enter all the fields");
       return;
     }
@@ -125,7 +125,7 @@ app
 
     // lets hash the password
     const hashedPassword = await bcrypt.hash(password, 12);
-    const latestUser = new User({ email, password: hashedPassword, Access });
+    const latestUser = new User({ name, email, password: hashedPassword, Access });
 
     latestUser
       .save()

@@ -4,16 +4,29 @@
     <a href="/logout" class="btn btn-danger">Logout</a>
     <h2>Welcome NGO<%= user.email %> </h2>
     <div class="row">
-        <div class="col-5">
-            <div class="card">
-                <div class="card-title">Event Creation</div>
+        <div class="col-7">
+            <form action="/Event" method="POST">
+            <div class="form-group">
+                        <label for="eventname">Event Name</label>
+                        <input type="text" class="form-control" name="Name">
+                        <label for="eventdate">Event Date</label>
+                        <input type="date" name="Eventdate" class="datepic">
+                        <label for="duration">Event Duration in days</label>
+                        <input type="number" name="Eventduration" class="form-control">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <div class="card c1" style="width: 15rem;">
+                <img src="https://img.icons8.com/bubbles/1020/000000/conference-call.png" class="card-img-top" alt="/login">
                 <div class="card-body">
-                    NGO can create a Event for Donation and Manage the Event
-                    <a href="/event" class="btn btn-danger"> GO to Event </a>
+                    <h5 class="card-title">Donar details</h5>
+                    <p class="card-text">we can Esaily get donar details and track how much donations is present</p>
+                    <a href="/donationdetails" class="Admin-GET">Get Donar Details</a>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 <%- include("./partials/footer") %>
