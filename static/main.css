@@ -54,3 +54,39 @@ form{
     border: 1px solid green;
     text-decoration: none;
 }
+.carousel-item
+{
+   height: 32rem;
+   background-color:black;
+   color: whitesmoke;
+   position: relative; 
+}
+.container-carousel
+{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 150px;
+}
+.image-overlay
+{
+    position:absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+.nav-l{
+    color: whitesmoke;
+    padding: 10px;
+}
+.nav-l:hover{
+    background-color: cyan;
+    color: darkgreen;
+}
