@@ -1,15 +1,25 @@
 <%- include("./partials/header") %>
 <div class="container">
+
+    <h3>Event Creation</h3>
     <form action="/Event" method="POST">
         <div class="form-group">
             <label for="eventname">Event Name</label>
             <input type="text" class="form-control" name="Name">
+        </div>
+        <div class="form-group">
             <label for="eventdate">Event Date</label>
-            <input type="date" name="Eventdate" class="datepic">
+            <input type="date" name="Eventdate" class="input-group date">
+        </div>
+        <div class="form-group">
             <label for="duration">Event Duration in days</label>
             <input type="number" name="Eventduration" class="form-control">
-            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <div class="form-group">
+            <label for="descrption">Event Descrption</label>
+            <input type="text" name="Eventdescrption" class="form-control">
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 <%- include("./partials/footer") %>

@@ -14,6 +14,10 @@ const EventSchema=new mongoose.Schema({
         type: Number,
         required: true,
     },
+    Eventdescrption:{
+        type: String,
+        required: true,
+    },
 
 });
 
